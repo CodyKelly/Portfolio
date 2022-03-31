@@ -16,8 +16,8 @@
 <body>
   <section id="intro">
     <div class="name-container">
-      <h1 class="name last-name shadow">Kelly</h1>
-      <h1 class="name last-name foreground">Kelly</h1>
+      <h1 class="name last-name last-name-shadow">Kelly</h1>
+      <h1 class="name last-name last-name-foreground">Kelly</h1>
       <h1 class="name first-name">Cody</h1>
     </div>
     <div class="tagline">
@@ -27,14 +27,26 @@
     </div>
   </section>
   <section id="about">
-    <h1 class="name">Page2</h1>
+    <div class="pane white-transparent-bg black center-column-items">
+      <h1 class="name">About Me</h1>
+      <div class="grid-2-3" style="max-width: 1000px;">
+        <figure class="center-column-items">
+          <img src="./me.jpeg" style="max-width: 300px; border: 3px solid black; justify-self: center;">
+          <figcaption class="italics">Highly motivated computer science student with experience in a wide range of technology, software, and
+            professional settings. Skilled in working with a team and learning new skills quickly.</figcaption>
+        </figure>
+        <p>Highly motivated computer science student with experience in a wide range of technology, software, and
+          professional settings. Skilled in working with a team and learning new skills quickly.</p>
+          
+      </div>
+    </div>
   </section>
   <section id="projects">
-    <div class="project-container">
+    <div class="pane top-bottom-border shadow black-transparent-bg white">
       <h1>Projects</h1>
       <div class="center-items">
         <a href="https://github.com/CodyKelly/contact-keeper" target="_blank" rel="noopener noreferrer">
-          <div class="card center-column-items">
+          <div class="card center-column-items white">
             <img src="./contact-keeper.png">
             <h1>Contact Keeper</h1>
             <div class="hr"></div>
@@ -42,13 +54,17 @@
             <p class="italics">JavaScript - React - Express</p>
           </div>
         </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
-          <div class="card">
-            <img src="./contact-keeper.png">
+        <a href="https://github.com/CodyKelly-UCD/lettalk_client-1" target="_blank" rel="noopener noreferrer">
+          <div class="card center-column-items white">
+            <img src="./let-talk.png">
+            <h1>Let Talk</h1>
+            <div class="hr"></div>
+            <p>MERN stack application featuring real-time chatrooms and social features.</p>
+            <p class="italics">JavaScript - Bootstrap - MongoDB</p>
           </div>
         </a>
         <a href="" target="_blank" rel="noopener noreferrer">
-          <div class="card">
+          <div class="card center-column-items white">
             <img src="./contact-keeper.png">
           </div>
         </a>

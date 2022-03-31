@@ -6,7 +6,7 @@
 :root {
   --about-bg-color: rgb(9, 9, 37);
   --project-container-border: 5px solid rgba(0, 0, 255, 0.438);
-  --card-border: 3px solid rgba(255, 255, 255, 0.767);
+  --card-border: 3px solid rgba(255, 255, 255, 0.185);
 }
 
 * {
@@ -27,6 +27,34 @@ body {
   overflow-x: hidden;
 }
 
+figcaption {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin: 15px;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.grid-2-3 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.white-transparent-bg {
+  background-color: rgba(255, 255, 255, 0.404);
+}
+
+.black-transparent-bg {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 #intro {
   background: linear-gradient(
       217deg,
@@ -38,15 +66,17 @@ body {
 }
 
 #about {
-  background-image: linear-gradient(
+  background: linear-gradient(
       to bottom,
-      black,
-      transparent 6%,
+      rgba(0, 0, 0, 0.95),
+      transparent 16%,
       transparent
     ),
-    linear-gradient(to top, black, transparent 6%, transparent),
-    url(https://cdn.pixabay.com/photo/2016/08/05/09/53/office-1571931_960_720.jpg);
+    linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent 16%, transparent),
+    url(./desk_still_life.jpg);
   background-size: cover;
+  backdrop-filter: blur(20px);
+  height: 125vh;
 }
 
 #projects {
@@ -106,7 +136,7 @@ section {
   padding-right: 6rem;
 }
 
-.foreground {
+.last-name-foreground {
   background-image: linear-gradient(
     0.25turn,
     rgb(255, 45, 45),
@@ -120,7 +150,7 @@ section {
   transform: translate(7vw, 75%);
 }
 
-.shadow {
+.last-name-shadow {
   color: rgba(0, 0, 0, 0.507);
   font-size: 21vw;
   transform: translate(7vw, 75%);
@@ -148,21 +178,25 @@ section {
   margin: 0 10px;
 }
 
-.project-container {
+.pane {
   height: fit-content;
   width: 100%;
   margin: 300px 0;
-  background: rgba(0, 0, 0, 0.3);
-  border-top: var(--project-container-border);
-  border-bottom: var(--project-container-border);
-  box-shadow: 0 0 20px black;
   padding: 50px;
 }
 
-.project-container h1 {
+.top-bottom-border {
+  border-top: var(--project-container-border);
+  border-bottom: var(--project-container-border);
+}
+
+.shadow {
+  box-shadow: 0 0 20px black;
+}
+
+.pane h1 {
   text-align: center;
   font-size: 3rem;
-  color: white;
   font-family: 'Julius Sans One', sans-serif;
   margin: 3rem 0;
 }
@@ -178,15 +212,17 @@ section {
 
 .center-column-items {
   display: flex;
+  height: 100%;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .card {
   width: 300px;
-  height: auto;
+  height: 430px;
   margin: 40px;
   /* border-radius: 7px; */
   background: rgba(0, 0, 0, 0.13);
@@ -195,6 +231,7 @@ section {
   padding: 20px 0;
   text-align: center;
   font-family: 'Lato', sans-serif;
+  transition: border-top 0.5s, border-bottom 0.5s;
 }
 
 .card h1 {
@@ -224,7 +261,6 @@ section {
   font-weight: 300;
   text-align: left;
   margin: 15px;
-  color: white;
 }
 
 .card:hover {
@@ -233,7 +269,7 @@ section {
 }
 
 .card:active {
-  opacity: 0.5;
+  opacity: 0.85;
 }
 
 @media only screen and (orientation: landscape) {
@@ -245,11 +281,11 @@ section {
     font-size: 25vh;
   }
 
-  .foreground {
+  .last-name-foreground {
     font-size: 20vh;
   }
 
-  .shadow {
+  .last-name-shadow {
     font-size: 21vh;
   }
 
