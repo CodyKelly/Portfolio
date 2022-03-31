@@ -10,6 +10,7 @@
 }
 
 * {
+  font-family: 'Lato', sans-serif;
   margin: 0;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -42,17 +43,31 @@ figcaption {
   color: black;
 }
 
-.grid-2-3 {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
+.bg-white {
+  background-color: white;
 }
 
-.white-transparent-bg {
+.bg-black {
+  background-color: black;
+}
+
+.bg-white-tr {
   background-color: rgba(255, 255, 255, 0.404);
 }
 
-.black-transparent-bg {
+.bg-black-tr {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.grid-2-3 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 20px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
 }
 
 #intro {
@@ -76,7 +91,12 @@ figcaption {
     url(./desk_still_life.jpg);
   background-size: cover;
   backdrop-filter: blur(20px);
-  height: 125vh;
+  min-height: 125vh;
+  padding: 100px 0;
+}
+
+#about img {
+  max-width: 300px;
 }
 
 #projects {
@@ -91,14 +111,23 @@ figcaption {
 }
 
 section {
-  position: relative;
-  margin: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.section-title {
+  width: fit-content;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.section-title h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3rem;
 }
 
 .italics {
@@ -178,6 +207,12 @@ section {
   margin: 0 10px;
 }
 
+.vr {
+  width: 40%;
+  height: 1px;
+  margin: 5px 0;
+}
+
 .pane {
   height: fit-content;
   width: 100%;
@@ -194,13 +229,6 @@ section {
   box-shadow: 0 0 20px black;
 }
 
-.pane h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-family: 'Julius Sans One', sans-serif;
-  margin: 3rem 0;
-}
-
 .center-items {
   display: flex;
   flex-wrap: wrap;
@@ -212,15 +240,15 @@ section {
 
 .center-column-items {
   display: flex;
-  height: 100%;
-  width: 100%;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .card {
+  position: relative;
   width: 300px;
   height: 430px;
   margin: 40px;
@@ -257,7 +285,6 @@ section {
 }
 
 .card p {
-  font-family: 'Lato', sans-serif;
   font-weight: 300;
   text-align: left;
   margin: 15px;
@@ -270,6 +297,25 @@ section {
 
 .card:active {
   opacity: 0.85;
+}
+
+@media only screen and (max-width: 400px) {
+  .section-title h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-2-3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #about img {
+    max-width: 200px;
+  }
 }
 
 @media only screen and (orientation: landscape) {
