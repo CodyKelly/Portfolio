@@ -130,6 +130,22 @@ section {
   font-size: 3rem;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+  width: 100%;
+  background: rgb(0, 0, 32);
+  color: white;
+  padding: 0 20px;
+}
+
+footer li {
+  list-style: none;
+}
+
 .italics {
   font-style: italic;
 }
