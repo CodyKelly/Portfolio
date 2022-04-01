@@ -35,6 +35,15 @@ figcaption {
   margin: 15px;
 }
 
+i {
+  font-size: 3rem;
+  background-color: rgba(255, 217, 0, 0.507);
+  margin: 5px;
+  padding: 7px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
 .white {
   color: white;
 }
@@ -70,6 +79,14 @@ figcaption {
   bottom: 0;
 }
 
+.center-text {
+  text-align: center;
+}
+
+.text {
+  margin: 15px;
+}
+
 #intro {
   background: linear-gradient(
       217deg,
@@ -97,6 +114,7 @@ figcaption {
 
 #about img {
   max-width: 300px;
+  border-radius: 150px;
 }
 
 #projects {
@@ -108,6 +126,7 @@ figcaption {
     ),
     linear-gradient(127deg, rgb(0, 0, 0), rgba(26, 26, 26, 0.445) 70.71%),
     linear-gradient(336deg, rgb(52, 32, 100), rgba(31, 13, 110, 0.473) 70.71%);
+  padding: 300px 0;
 }
 
 section {
@@ -126,8 +145,13 @@ section {
 }
 
 .section-title h1 {
-  font-family: 'Julius Sans One', sans-serif;
   font-size: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 footer {
@@ -232,8 +256,6 @@ footer li {
 .pane {
   height: fit-content;
   width: 100%;
-  margin: 300px 0;
-  padding: 50px;
 }
 
 .top-bottom-border {
@@ -261,6 +283,11 @@ footer li {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+}
+
+.skill-badge {
+  border: 10px solid rgb(247, 220, 71);
+  border-radius: 7px;
 }
 
 .card {
@@ -303,7 +330,6 @@ footer li {
 .card p {
   font-weight: 300;
   text-align: left;
-  margin: 15px;
 }
 
 .card:hover {

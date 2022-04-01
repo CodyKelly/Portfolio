@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Roboto:wght@900&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Roboto:wght@900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/dbfa73c5e4.js" crossorigin="anonymous"></script>
 <title>Cody's Portfolio</title>
 </head>
 <body>
@@ -37,7 +38,25 @@
           <img src="./me.jpeg" style="border: 3px solid black; justify-self: center;">
           <figcaption class="italics">Me</figcaption>
         </figure>
-        <p>First of all, thanks for your time and interest! I love all things web development, but especially that of frontend design. I'm currently pursuing a Bachelor's degree in Computer Science at the University of Colorado, Denver. </p>
+        <div>
+          <p class="text">
+            First of all, thanks for your time and interest! I'm Cody, a frontend developer based out of Denver, Colorado.
+            I strive for succinct, elegant, and responsive designs that welcome users to your site.
+          </p>  
+          <h2 class="center-text" style="margin: 20px 0 10px 0">Skills</h2>
+          <div class="center-items">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-sass"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="center-items">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-git-square"></i>
+          </div>
+        </div?>
+        
       </div>
     </div>
   </section>
@@ -53,8 +72,8 @@
             <img src="./contact-keeper.png">
             <h1>Contact Keeper</h1>
             <div class="hr"></div>
-            <p>A full-stack app complete with authentication and routing. Users can add, edit, and delete contact information in one sleek stop.</p>
-            <p class="italics bottom">JavaScript - React - Express</p>
+            <p class="text">A full-stack app complete with authentication and routing. Users can add, edit, and delete contact information in one sleek stop.</p>
+            <div class="pane bg-white-tr text italics bottom">JavaScript - React - Express</div>
           </div>
         </a>
         <a href="https://github.com/CodyKelly-UCD/lettalk_client-1" target="_blank" rel="noopener noreferrer">
@@ -62,8 +81,8 @@
             <img src="./let-talk.png">
             <h1>Let Talk</h1>
             <div class="hr"></div>
-            <p>MERN stack application featuring real-time chatrooms and social features.</p>
-            <p class="italics bottom">JavaScript - Bootstrap - MongoDB</p>
+            <p class="text">MERN stack application featuring real-time chatrooms and social features.</p>
+            <div class="pane bg-white-tr text italics bottom">JavaScript - Bootstrap - MongoDB</div>
           </div>
         </a>
         <a href="https://github.com/CodyKelly/Portfolio" target="_blank" rel="noopener noreferrer">
@@ -71,8 +90,8 @@
             <img src="./portfolio.png">
             <h1>Portfolio</h1>
             <div class="hr"></div>
-            <p>This portfolio! 100% home-grown code, this site was build from the ground up to showcase my design philosophies.</p>
-            <p class="italics bottom">HTML - CSS</p>
+            <p class="text">This portfolio! 100% home-grown code, this site was build from the ground up to showcase my design philosophies.</p>
+            <div class="pane bg-white-tr text italics bottom">HTML - CSS</div>
           </div>
         </a>
       </div>
