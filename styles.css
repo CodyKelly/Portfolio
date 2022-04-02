@@ -105,7 +105,7 @@ i {
       transparent
     ),
     linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent 3%, transparent),
-    url(./desk_still_life.jpg);
+    url(./images/desk_still_life.jpg);
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(20px);
