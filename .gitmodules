@@ -1,6 +1,0 @@
-[submodule "order-summary-component"]
-	path = order-summary-component
-	url = git@github.com:CodyKelly/order-summary-component.git
-[submodule "clipboard-landing-page"]
-	path = clipboard-landing-page
-	url = git@github.com:CodyKelly/clipboard-landing-page.git
