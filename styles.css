@@ -37,7 +37,7 @@ figcaption {
 
 i {
   font-size: 3rem;
-  background-color: rgba(255, 217, 0, 0.507);
+  background-color: rgba(255, 217, 0, 0.692);
   margin: 5px;
   padding: 7px;
   border-radius: 10px;
@@ -286,11 +286,6 @@ footer li {
   flex-wrap: nowrap;
 }
 
-.skill-badge {
-  border: 10px solid rgb(247, 220, 71);
-  border-radius: 7px;
-}
-
 .card {
   position: relative;
   width: 300px;
@@ -331,6 +326,14 @@ footer li {
 .card p {
   font-weight: 300;
   text-align: left;
+}
+
+.card .tag {
+  font-size: 1.25rem;
+}
+
+.card .footer {
+  padding-bottom: 0.5rem;
 }
 
 .card:hover {
